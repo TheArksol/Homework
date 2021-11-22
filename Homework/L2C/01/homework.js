@@ -517,7 +517,7 @@ function printOddPosition() {
   returnToMenu();
 }
 
-
+//Exercise 10
 function printLongestName() {
 
   let names = ["Ute", "Leif", "Erik", "Henry", "Josie", "Helder", "Conner", "Marcel", "Hannah", "Alex"];
@@ -553,6 +553,7 @@ function printLongestName() {
 
 }
 
+//Exercise 11
 function sumAvgHighestLowest() {
 
   let array = [4, 7, 10, 12, 1, 8, 20, 16];
