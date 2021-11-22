@@ -230,10 +230,6 @@ function sumMixOption(num) {
 
 }
 
-
-
-
-
 //Exercise 7
 function beackwalkHotel() {
 
@@ -301,8 +297,8 @@ function beackwalkHotel() {
   }
 
 
+  returnToMenu();
 }
-
 
 function beachWalkHotel_CheckGuests() {
 
@@ -364,7 +360,6 @@ function beachWalkHotel_CheckBreakfast(guests) {
   return breakfast;
 }
 
-
 function beachWalkHotel_CheckRoom() {
   console.log("Please choose the room/s ");
   console.log("1. Normal room  - 90€ per night");
@@ -388,7 +383,6 @@ function beachWalkHotel_CheckRoom() {
   
   return room;
 }
-
 
 function checkStringIsInt(string) {
 
