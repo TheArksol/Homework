@@ -90,7 +90,7 @@ function getNumber(valueName) {
 }
 
 function rectanglePerimeter(length, width) {
-  return (2 * (length + width));
+  return ((2 * length) + (2 * width));
 }
 
 function rectangleArea(length, width) {
