@@ -12,6 +12,9 @@ let sentence = readlineSync.question("> ");
 console.log(returnStringInFrame(sentence));
 
 
+///////////////////////////////
+// Exercise 12
+///////////////////////////////
 function returnStringBackwards(string) {
   let stringBackwards = "";
 
@@ -24,6 +27,10 @@ function returnStringBackwards(string) {
 
 }
 
+
+///////////////////////////////
+// Exercise 13
+///////////////////////////////
 function returnStringInFrame(string) {
 
   let stringSplit = string.split(" ");
@@ -38,30 +45,26 @@ function returnStringInFrame(string) {
     }
   }
 
-  //Generate String to return
-   for (let i = 0; i < stringSplit.length; i++) {
+  //Generate the "content" of the frame 
+  for (let i = 0; i < stringSplit.length; i++) {
 
     let differenceInLength = longestWord - stringSplit[i].length;
-  
     let whiteSpaceDifference = "";
-    while (differenceInLength > 0){
+    while (differenceInLength > 0) {
       whiteSpaceDifference += " ";
       differenceInLength--;
     }
- 
-     frameContent += "* " + stringSplit[i] + whiteSpaceDifference + " *\n";
-   }
 
+    //Adds left and right the "frame"(*) and in the center the word + the offset to the longest string, so that every line has the same length.
+    frameContent += "* " + stringSplit[i] + whiteSpaceDifference + " *\n";
+  }
 
   //Generate the Top and bottom frame part.
-  while(longestWord > 0){
+  while (longestWord > 0) {
     frame += "*"
     longestWord--;
   }
 
- 
-
-  
   return frame + "\n" + frameContent + frame;
 }
 
